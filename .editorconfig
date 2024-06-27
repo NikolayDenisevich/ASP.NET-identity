@@ -1,0 +1,93 @@
+root = true
+
+[*.cs]
+# Use file-scoped approach instead of block-scoped
+csharp_style_namespace_declarations = file_scoped:error
+dotnet_diagnostic.IDE0161.severity = error
+
+# Code-style formatting rules
+dotnet_diagnostic.IDE0055.severity = error
+
+# Avoid using out parameters
+dotnet_diagnostic.CA1021.severity = none
+
+# Closing parenthesis must be spaced correctly
+dotnet_diagnostic.SA1009.severity = error
+
+# Negative signs must be spaced correctly
+dotnet_diagnostic.SA1028.severity = error
+
+# Prefix local calls with "this."
+dotnet_diagnostic.SA1101.severity = error
+
+# Avoid using out parameters
+dotnet_diagnostic.SA1111.severity = none
+
+# All arguments should be aligned with new line
+dotnet_diagnostic.SA1116.severity = error
+
+# Using directives must be placed correctly
+dotnet_diagnostic.SA1200.severity = none
+
+# Elements must appear in the correct order
+dotnet_diagnostic.SA1201.severity = none
+
+# Static members should go before non-static
+dotnet_diagnostic.SA1204.severity = none
+
+# System Using directives must be placed before other using directives
+dotnet_diagnostic.SA1208.severity = none
+
+# Readonly elements must appear before non-readonly elements
+dotnet_diagnostic.SA1214.severity = error
+
+# Element must begin with UpperCase letter
+dotnet_diagnostic.SA1300.severity = error
+
+# Field names must begin with lowercase letter
+dotnet_diagnostic.SA1306.severity = error
+
+# variable names must not be prefixed (m_, s_)
+dotnet_diagnostic.SA1308.severity = error
+
+# Field names must not begin with underscore
+dotnet_diagnostic.SA1309.severity = error
+
+# Fields must be private
+dotnet_diagnostic.SA1401.severity = none
+
+# Negative signs must be spaced correctly
+dotnet_diagnostic.SA1402.severity = none
+
+# Opening braces must not be followed by blank line
+dotnet_diagnostic.SA1505.severity = none
+
+# Closing braces must not be preceded by blank line
+dotnet_diagnostic.SA1508.severity = error
+
+# Remove blank lines at the start of file
+dotnet_diagnostic.SA1517.severity = error
+
+# A C# code file is missing a standard file header
+dotnet_diagnostic.SA1633.severity = none
+
+# Group namespaces by names and separate with blank line
+dotnet_separate_import_directive_groups = true
+
+# Place "System.*" namespaces on the top of file
+dotnet_sort_system_directives_first = false
+
+# Add empty line at the end of file
+insert_final_newline = true
+
+# No space between method name and brackets - Test()
+csharp_space_between_method_declaration_name_and_open_parenthesis = false
+
+# No space between method arguments - Test(int a)
+csharp_space_between_method_declaration_parameter_list_parentheses = false
+
+# No space between method brackets with empty parameters - Test()
+csharp_space_between_method_declaration_empty_parameter_list_parentheses = false
+
+# Ignore whitespaces between keywords ("new")
+csharp_space_around_declaration_statements = ignore
